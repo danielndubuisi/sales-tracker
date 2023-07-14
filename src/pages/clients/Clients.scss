@@ -1,0 +1,12 @@
+.clients {
+  display: flex;
+  width: 100%;
+
+  .clients-container {
+    flex: 6;
+
+    .content {
+      padding: 20px;
+    }
+  }
+}

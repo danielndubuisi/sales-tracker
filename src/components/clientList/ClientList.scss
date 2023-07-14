@@ -1,0 +1,72 @@
+ .table {
+  margin-top: 20px;
+  width: 90%;
+
+  .tableHead {
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 0.1px;
+
+    .icon {
+      font-size: 14px;
+    }
+  }
+
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.ACTIVE {
+      font-weight: 600;
+      color: green;
+      background-color: rgba(0, 128, 0, 0.151);
+    }
+    &.Inactive {
+      font-weight: 600;
+      color: grey;
+      background-color: rgba(134, 125, 125, 0.151);
+    }
+    &.active {
+      font-weight: 600;
+      color: goldenrod;
+      background-color: rgba(218, 165, 32, 0.2);
+    }
+    &.Dormant {
+      font-weight: 600;
+      color: red;
+      background-color: rgba(204, 25, 25, 0.151);
+    }
+  }
+
+  .tableRow {
+    &:hover {
+      cursor: pointer;
+      background-color: #34a6f150;
+    }
+  }
+
+  .tableCell {
+    font-weight: 400;
+    font-size: 13px;
+
+    &.fulfil {
+      gap: 5px;
+
+      .icon {
+        font-size: 18px;
+        &.up {
+          color: green;
+        }
+
+        &.down {
+          color: red;
+        }
+      }
+    }
+
+    &.wallet {
+      font-weight: 500;
+    }
+  }
+}

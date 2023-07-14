@@ -1,0 +1,67 @@
+.app.dark {
+  background-color: #222;
+  color: rgb(156, 156, 156);
+
+  .grid {
+    stroke: rgba(228, 228, 228, 0.068);
+  }
+
+  .table {
+    background-color: #222;
+
+    .tableCell {
+      color: rgb(156, 156, 156);
+    }
+
+    .tableRow {
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(216, 212, 212, 0.158);
+      }
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+
+    .wrapper {
+      background-color: #222;
+
+      .search {
+        border-color: #333;
+        background-color: #222;
+
+        input {
+          color: #ddd;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    background-color: #222;
+    color: rgb(156, 156, 156);
+    border-color: #333;
+
+    hr {
+      border-color: #333;
+    }
+
+    .center {
+      ul {
+        li {
+          color: #999;
+
+          &:hover {
+            background-color: #4faeee63;
+          }
+        }
+      }
+    }
+  }
+
+  .login {
+    background-color: #fff;
+  }
+}

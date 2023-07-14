@@ -1,0 +1,124 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 80px auto;
+  border: 1px solid rgba(99, 96, 96, 0.507);
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px 1px rgba(83, 80, 80, 0.47);
+
+  .top {
+    width: 100%;
+    margin: 40px;
+    margin-bottom: 0;
+
+    .header {
+      font-size: 18px;
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: #777;
+      font-size: 12px;
+      font-weight: 600;
+      width: 70%;
+    }
+  }
+
+  .form {
+    width: 100%;
+    margin: 40px;
+    margin-bottom: 0;
+
+    form {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .label {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .flex {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          input {
+            width: 90%;
+            padding-left: 5px;
+          }
+          span {
+            font-size: 5px;
+            width: 30px;
+            padding-top: 2px;
+            height: 29px;
+            font-size: 10px;
+            background-color: rgba(235, 226, 226, 0.418);
+          }
+        }
+      }
+
+      input {
+        border: 1px solid rgba(255, 245, 245, 0.377);
+        border-bottom: none;
+        background-color: rgba(235, 226, 226, 0.418);
+        height: 30px;
+        padding-left: 5px;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          font-size: 12px;
+          padding: 5px;
+        }
+      }
+
+      .btn {
+        background-color: rgb(150, 144, 144);
+        color: #fff;
+        font-size: 12px;
+        height: 40px;
+        font-weight: 600;
+        border-radius: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          background-color: rgb(92, 92, 190);
+          transform: scale(1);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .foot {
+    width: 100%;
+    margin: 40px;
+
+    .footer {
+      width: 220px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 12px;
+      text-decoration: underline;
+      color: rgb(57, 101, 177);
+      margin: 0 0 20px 50px;
+
+      &:hover {
+        color: rgba(163, 30, 30, 0.918);
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 10px;
+
+  img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+}

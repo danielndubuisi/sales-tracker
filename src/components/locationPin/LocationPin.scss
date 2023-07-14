@@ -1,0 +1,24 @@
+.pin {
+  .icon {
+    &.ACTIVE {
+      color: rgb(35, 209, 35);
+      cursor: pointer;
+    }
+    &.active {
+      color: goldenrod;
+      cursor: pointer;
+    }
+    &.Dormant {
+      color: red;
+      cursor: pointer;
+    }
+    &.Inactive {
+      color: rgba(28, 28, 165, 0.767);
+      cursor: pointer;
+    }
+    &.Unknown {
+      color: rgb(24, 23, 23);
+      cursor: pointer;
+    }
+  }
+}
