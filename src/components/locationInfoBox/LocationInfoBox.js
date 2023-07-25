@@ -17,7 +17,10 @@ const LocationInfoBox = ({ info }) => {
             Name: <span>{info.name}</span>
           </li>
           <li>
-            LCDA: <span>{info.lcda}</span>
+            Category: <span>{info.category}</span>
+          </li>
+          <li>
+            Status: <span>{info.status}</span>
           </li>
           <li>
             Purchase: <span>{info.avgPurchase}</span>

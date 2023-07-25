@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import LocationPin from "../locationPin/LocationPin";
 import LocationInfoBox from "../locationInfoBox/LocationInfoBox";
-import { useState } from "react";
 
 export default function Map({ eventData }) {
   const [locationInfo, setLocationInfo] = useState(null);
@@ -35,7 +34,8 @@ export default function Map({ eventData }) {
                   avgPurchase: ev.avgPurchase,
                   name: ev.name,
                   img: ev.img,
-                  lcda: ev.lcda,
+                  status: ev.status,
+                  category: ev.category
                 })
               }
             />
