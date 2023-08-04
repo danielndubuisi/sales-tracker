@@ -30,7 +30,7 @@ export default function Map({ eventData }) {
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-        {filteredStatus !== 'all' && filteredClientType === 'all' ? filteredStatus === 'all' && filteredClientType !== "all"  ?
+        {filteredStatus !== 'all' && filteredClientType === 'all' ?
           ( eventData?.filter(filteredData => filteredData.status === filteredStatus)
             ?.map(
               (ev) => (
@@ -52,7 +52,7 @@ export default function Map({ eventData }) {
                   }
                 />
               ))) 
-              :
+              : filteredStatus === 'all' && filteredClientType !== "all"  ?
               ( eventData?.filter(filteredData => filteredData.clientType === filteredClientType)
               ?.map(
                 (ev) => (
@@ -74,6 +74,28 @@ export default function Map({ eventData }) {
                     }
                   />
                 )))
+              : filteredStatus !== 'all' && filteredClientType !== 'all' ? 
+              (eventData?.filter(filteredData => filteredData.clientType === filteredClientType)?.filter(filteredData => filteredData.status === filteredStatus)
+              ?.map(
+                (ev) => (
+                  <LocationPin
+                    key={ev.id}
+                    status={ev.status}
+                    lat={ev.lat}
+                    lng={ev.lng}
+                    onClick={() =>
+                      setLocationInfo({
+                        id: ev.id,
+                        avgPurchase: ev.avgPurchase,
+                        name: ev.name,
+                        img: ev.img,
+                        status: ev.status,
+                        category: ev.category,
+                        clientType: ev.clientType
+                      })
+                    }
+                  />
+                ))) 
               :
               ( eventData?.map((ev) => (
                   <LocationPin

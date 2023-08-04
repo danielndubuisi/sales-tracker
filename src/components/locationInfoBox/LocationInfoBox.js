@@ -31,8 +31,7 @@ const LocationInfoBox = (props) => {
             </li>
           <small onClick={() => navigate(`/clients/${props.info.id}`)}>See more info →</small>
           </ul>
-          <div className="image"        
->
+          <div className="image">
             <StarRateIcon className="icon" />
             <img src={props.info.img} alt="profile" />
           </div>
