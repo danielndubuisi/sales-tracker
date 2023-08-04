@@ -5,7 +5,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import "./Tracker.scss";
 
 const Tracker = () => {
-  const url = "http://localhost:3000/eventData/";
+  const url = "http://localhost:3000/eventData";
   const { error, isPending, data: eventData } = useFetch(url);
 
   return (

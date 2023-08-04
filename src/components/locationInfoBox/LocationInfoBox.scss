@@ -10,10 +10,6 @@
   border-radius: 20px;
   opacity: 0.8;
 
-  &:hover {
-    cursor: pointer;
-  }
-
   h2 {
     padding-left: 10px;
     font-size: 18px;
@@ -23,7 +19,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
+    .close {
+      position: absolute;
+      top: -25px;
+      right: 0;
+      padding: 2px;
+      width: 15px;
+      height: 15px;
+      color: red;
+
+      &:hover {
+        cursor: pointer;
+      }    
+    }
     ul {
       list-style-type: none;
       margin: 10px;
@@ -31,6 +41,15 @@
       li {
         font-size: 16px;
         font-weight: 600;
+      }
+
+      small {
+        color: rgba(16, 101, 134, 0.918);
+        &:hover {
+          cursor: pointer;
+          color: rgb(8, 69, 202);
+          transition: all 0.3s ease;
+        }      
       }
     }
   }
@@ -49,4 +68,5 @@
       border-radius: 50%;
     }
   }
+
 }

@@ -25,6 +25,7 @@ const SingleClient = () => {
             <p>Avg Purchase: {data.avgPurchase}</p>
             <p>Status: {data.status}</p>
             <p>Category: {data.category}</p>
+            <p>Type: {data.clientType}</p>
             <p>Current fulfilment(%): {data.fulfilment}</p>
             <h4>Suggestions to show...</h4>
             <ul>

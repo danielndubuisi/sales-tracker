@@ -6,7 +6,7 @@ import Spinner from "../../components/spinner/Spinner";
 import { useFetch } from "../../hooks/useFetch";
 
 const Clients = () => {
-  const url = "http://localhost:3000/eventData/";
+  const url = "http://localhost:3000/eventData";
   const { error, isPending, data: eventData } = useFetch(url);
 
   return (
