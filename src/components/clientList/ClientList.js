@@ -20,6 +20,7 @@ const ClientList = ({ rows }) => {
           <TableRow>
             <TableCell className="tableHead">CLIENT PROFILE</TableCell>
             <TableCell className="tableHead">CLIENT NAME</TableCell>
+            <TableCell className="tableHead">REP</TableCell>
             <TableCell className="tableHead flex">
               <span>ONBOARD DATE</span>{" "}
             </TableCell>
@@ -37,6 +38,7 @@ const ClientList = ({ rows }) => {
             >
               <TableCell className="tableCell"><img src={row.img} alt="client-profile" style={{width: '25px', height: "25px", borderRadius: '50%', marginLeft: '25px'}} /></TableCell>
               <TableCell className="tableCell">{row.name}</TableCell>
+              <TableCell className="tableCell">{row.rep}</TableCell>
               <TableCell className="tableCell">{row.onboardDate}</TableCell>
               <TableCell className="tableCell">
                 <span className={`status ${row.status}`}>{row.status}</span>
